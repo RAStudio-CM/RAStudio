@@ -1,6 +1,6 @@
 import ProjectPage from "../../components/ProjectPage";
-export default function Page(){return <ProjectPage title="Escuela Padre Carlos Mugica" question="¿Puede una escuela convertirse en el corazón de un barrio?" location="Barrio Padre Carlos Mugica, CABA" year="2025" status="1° Premio · Universidad de Palermo" typology="Educación · Equipamiento público" team="Martín Cos · RAStudio" services={["Arquitectura","Investigación","Representación"]} intro="La escuela se concibe como infraestructura social: un edificio capaz de alojar educación y, al mismo tiempo, ofrecer servicios y espacios de encuentro para el barrio." strategy="Construir un umbral activo entre lo público y lo privado, haciendo que patios, circulaciones y programas compartidos funcionen como una extensión del tejido comunitario." hero="/images/projects/escuela-1.webp" drawing="/images/projects/escuela-plan.webp" download="/files/escuela-planta.pdf" images={[
-{src:"/images/projects/escuela-2.webp",caption:"04 · Patio como espacio común",layout:"full"},
-{src:"/images/projects/escuela-3.webp",caption:"05 · Umbral urbano",layout:"half"},
-{src:"/images/projects/escuela-4.webp",caption:"06 · Infraestructura social",layout:"half"}
-]} accent="school" previous={{href:"/proyectos/monroe-plaza",title:"Monroe Plaza"}} next={{href:"/proyectos/padl",title:".PADL"}}/>}
+import { projectBySlug } from "@/content/projects";
+
+export default function Page() {
+  return <ProjectPage {...projectBySlug["escuela-mugica"]} />;
+}

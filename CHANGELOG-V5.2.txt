@@ -1,0 +1,20 @@
+RAStudio V5.2 — Design System Foundation
+
+Arquitectura
+- Centralización de los cuatro proyectos en content/projects.ts.
+- Separación entre contenido, componentes y presentación.
+- Componentes reutilizables para hero, planos, galería, ficha y navegación de proyectos.
+- Componentes UI base: Container, Section, Eyebrow y EditorialQuote.
+
+Sistema visual
+- Nuevo archivo styles/tokens.css.
+- Escala de espaciado basada en 8 px.
+- Tokens de tipografía, layout, color y movimiento.
+- Compatibilidad con las clases existentes para conservar la identidad visual aprobada.
+
+Mantenimiento
+- Home, Work y páginas de proyecto ahora consumen una única fuente de datos.
+- Para agregar o editar un proyecto, el punto principal es content/projects.ts.
+- Menor duplicación de código y menor riesgo de inconsistencias.
+
+No se modificaron las imágenes ni la narrativa aprobada.

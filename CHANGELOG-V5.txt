@@ -1,0 +1,10 @@
+RAStudio V5 — Editorial System
+
+- Nuevo sistema tipográfico y escala de espaciado mediante variables globales.
+- Márgenes fluidos y ancho máximo editorial para pantallas grandes.
+- Home refinada: mejor jerarquía, respiración y ritmo vertical.
+- Proyectos: títulos balanceados, textos de introducción más editoriales y mejor tratamiento de planos.
+- Header y footer refinados, con mayor contraste y consistencia.
+- Mejoras de hover, foco y navegación interna de proyectos.
+- Ajustes específicos para móvil y pantallas grandes.
+- No se alteraron contenidos ni imágenes del proyecto.

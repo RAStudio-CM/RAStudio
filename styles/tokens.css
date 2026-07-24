@@ -1,0 +1,41 @@
+:root {
+  /* Color */
+  --color-black: #090909;
+  --color-paper: #f1efe9;
+  --color-ink: #11110f;
+  --color-muted: #77736d;
+  --color-line: rgba(17, 17, 15, 0.22);
+
+  /* Type */
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: Iowan Old Style, Baskerville, "Times New Roman", serif;
+  --text-caption: 0.625rem;
+  --text-small: 0.75rem;
+  --text-body: clamp(1rem, 1.15vw, 1.25rem);
+  --text-h3: clamp(2rem, 4vw, 4.75rem);
+  --text-h2: clamp(3rem, 6.5vw, 7rem);
+  --text-display: clamp(4.25rem, 9vw, 10rem);
+
+  /* Space: 8px base rhythm */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
+  --space-8: 8rem;
+  --space-9: 12rem;
+
+  /* Layout */
+  --page-pad: clamp(1.25rem, 4vw, 4.5rem);
+  --container-wide: 100rem;
+  --container-copy: 52rem;
+  --header-height: 4.5rem;
+
+  /* Motion */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 180ms;
+  --duration-normal: 320ms;
+  --duration-slow: 720ms;
+}

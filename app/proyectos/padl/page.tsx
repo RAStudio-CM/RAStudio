@@ -1,6 +1,6 @@
 import ProjectPage from "../../components/ProjectPage";
-export default function Page(){return <ProjectPage title=".PADL" question="¿Cómo convertir un terreno restrictivo en la fortaleza del proyecto?" location="Calle Concepción, CABA" year="2026" status="Proyecto ejecutivo · obra prevista" typology="Deportivo · Comercial" surface="Lote 120 × 17 m" team="RAStudio · PADelCO" services={["Arquitectura","Proyecto ejecutivo","Representación"]} intro="Un lote de 120 metros de largo por apenas 17 de ancho organiza un complejo de pádel y usos mixtos para PADelCO. La geometría extrema deja de ser un obstáculo y se transforma en la identidad espacial del conjunto." strategy="Trabajar la profundidad como secuencia: acceso, actividad, pausa y encuentro se encadenan para producir una experiencia continua y legible." hero="/images/projects/padl-1.webp" drawing="/images/projects/padl-plan.webp" download="/files/padl-planta.pdf" images={[
-{src:"/images/projects/padl-2.webp",caption:"04 · Profundidad y secuencia",layout:"full"},
-{src:"/images/projects/padl-3.webp",caption:"05 · Actividad",layout:"half"},
-{src:"/images/projects/padl-4.webp",caption:"06 · Encuentro",layout:"half"}
-]} accent="padl" previous={{href:"/proyectos/escuela-mugica",title:"Escuela Padre Carlos Mugica"}} next={{href:"/proyectos/beazley-525",title:"Beazley 525"}}/>}
+import { projectBySlug } from "@/content/projects";
+
+export default function Page() {
+  return <ProjectPage {...projectBySlug["padl"]} />;
+}

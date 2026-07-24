@@ -318,3 +318,14 @@ main{isolation:isolate}
  .footer>div:nth-child(2),.footer>div:nth-child(3){border-left:0;border-top:1px solid #292929;padding:24px 0 0}
  .footer small{margin-top:24px}
 }
+
+/* V5.2 · RAStudio Design System foundations */
+.dsContainer{width:100%;max-width:var(--container-wide);margin-inline:auto;padding-inline:var(--page-pad)}
+.dsContainer--copy{max-width:var(--container-copy)}
+.dsSection{padding-block:var(--space-7)}
+.dsSection--compact{padding-block:var(--space-5)}
+.dsSection--large{padding-block:clamp(var(--space-8),12vw,var(--space-9))}
+.editorialQuote{margin:0;max-width:72rem;font-family:var(--font-serif);font-size:var(--text-h2);font-weight:400;line-height:.96;letter-spacing:-.045em}
+:root{--black:var(--color-black);--paper:var(--color-paper);--ink:var(--color-ink);--muted:var(--color-muted);--line:var(--color-line);--pad:var(--page-pad);--sans:var(--font-sans);--serif:var(--font-serif)}
+.projectPage section[id],.projectPage nav[id]{scroll-margin-top:calc(var(--header-height) + 3.5rem)}
+@media(max-width:800px){.dsSection{padding-block:var(--space-6)}.dsSection--large{padding-block:var(--space-8)}.editorialQuote{font-size:clamp(2.8rem,12vw,5rem)}}
