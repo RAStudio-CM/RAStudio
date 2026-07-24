@@ -1,0 +1,6 @@
+import ProjectPage from "../../components/ProjectPage";
+export default function Page(){return <ProjectPage title="Beazley 525" question="¿Cómo mejorar un proyecto sin empezar desde cero?" location="Santos Lugares" year="2026" status="En construcción · Charito SRL" typology="Vivienda multifamiliar" team="RAStudio · Charito SRL" services={["Revisión de proyecto","Documentación","Representación"]} intro="RAStudio recibió un proyecto aprobado y desarrolló una revisión integral para optimizar su organización, expresión y comunicación sin interrumpir el avance administrativo y constructivo." strategy="Detectar las decisiones que podían mejorar el conjunto, intervenir con precisión y coordinar esas transformaciones con una obra que ya estaba en marcha." hero="/images/projects/beazley-living.webp" images={[
+{src:"/images/projects/beazley-bedroom.webp",caption:"03 · Dormitorio",layout:"full"},
+{src:"/images/projects/beazley-bathroom.webp",caption:"04 · Materialidad",layout:"half"},
+{src:"/images/projects/beazley-dining.webp",caption:"05 · Vida doméstica",layout:"half"}
+]} accent="beazley" previous={{href:"/proyectos/padl",title:".PADL"}} next={{href:"/proyectos/monroe-plaza",title:"Monroe Plaza"}}/>}
