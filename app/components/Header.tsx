@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ThemeToggle from "./ThemeToggle";
 
 const links=[
  ["/work","01 Work"],
@@ -32,7 +33,7 @@ export default function Header(){
  useEffect(()=>{setOpen(false);setHidden(false)},[pathname]);
  return <header className={`siteHeader${scrolled?" scrolled":""}${open?" menuOpen":""}${hidden?" headerHidden":""}`}>
   <Link className="wordmark" href="/" aria-label="RAStudio, inicio">RA<span>Studio</span></Link>
-  <button className="menuButton" aria-expanded={open} aria-controls="primary-nav" aria-label={open?"Cerrar navegación":"Abrir navegación"} onClick={()=>setOpen(!open)}>{open?"Cerrar":"Menú"}</button>
+  <div className="headerActions"><ThemeToggle/><button className="menuButton" aria-expanded={open} aria-controls="primary-nav" aria-label={open?"Cerrar navegación":"Abrir navegación"} onClick={()=>setOpen(!open)}>{open?"Cerrar":"Menú"}</button></div>
   <nav id="primary-nav" className={open?"siteNav open":"siteNav"} aria-label="Navegación principal">
    {links.map(([href,label])=><Link key={href} href={href} aria-current={pathname===href||pathname.startsWith(`${href}/`)?"page":undefined}>{label}</Link>)}
   </nav>
