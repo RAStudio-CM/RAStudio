@@ -8,6 +8,11 @@ const projectIdeas: Record<string, string> = {
   "escuela-mugica": "Arquitectura como infraestructura social.",
   padl: "Transformar la restricción en identidad.",
   "beazley-525": "Intervenir con precisión sobre lo existente.",
+  "casa-das": "Extender la vida cotidiana hacia el jardín.",
+  "museo-del-agua": "Entrar al mar sin mojarse.",
+  "sistema-rain": "Integrar el agua a la envolvente.",
+  ndp150: "Anticipar una obra para poder comunicarla.",
+  "stand-buick": "Del esquema a la experiencia espacial.",
 };
 
 export default function Home() {

@@ -1,1 +1,9 @@
-import type {MetadataRoute} from "next";export default function sitemap():MetadataRoute.Sitemap{const routes=["","/work","/practice","/lab","/martin-cos","/contacto","/proyectos/monroe-plaza","/proyectos/escuela-mugica","/proyectos/padl","/proyectos/beazley-525"];return routes.map(r=>({url:`https://rastudio.com${r}`,lastModified:new Date(),changeFrequency:"monthly" as const,priority:r===""?1:.8}))}
+import type { MetadataRoute } from "next";
+import { projects } from "@/content/projects";
+import { journalEntries } from "@/content/journal";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const base = "https://ra-studio-mc.vercel.app";
+  const routes = ["", "/work", "/practice", "/lab", "/journal", "/martin-cos", "/contacto", ...projects.map((p) => `/proyectos/${p.slug}`), ...journalEntries.map((e) => `/journal/${e.slug}`)];
+  return routes.map((route) => ({ url: `${base}${route}`, lastModified: new Date(), changeFrequency: route.startsWith("/journal") ? "monthly" : "monthly", priority: route === "" ? 1 : .8 }));
+}

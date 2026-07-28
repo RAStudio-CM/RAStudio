@@ -7,8 +7,9 @@ const links=[
  ["/work","01 Work"],
  ["/practice","02 Practice"],
  ["/lab","03 Lab"],
- ["/martin-cos","04 Martín Cos"],
- ["/contacto","05 Contacto"]
+ ["/journal","04 Journal"],
+ ["/martin-cos","05 Martín Cos"],
+ ["/contacto","06 Contacto"]
 ];
 
 export default function Header(){

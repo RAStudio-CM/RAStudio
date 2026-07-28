@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import MotionSystem from "./components/MotionSystem";
 
 export const metadata:Metadata={
- metadataBase:new URL("https://rastudio.com"),
+ metadataBase:new URL("https://ra-studio-mc.vercel.app"),
  title:{default:"RAStudio — Arquitectura en proceso",template:"%s | RAStudio"},
  description:"Estudio de arquitectura dirigido por Martín Cos. Proyecto, documentación, obra y visualización desde Buenos Aires.",
  keywords:["arquitectura","estudio de arquitectura","Buenos Aires","Martín Cos","documentación de obra","visualización arquitectónica"],

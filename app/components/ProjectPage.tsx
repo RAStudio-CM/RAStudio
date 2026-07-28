@@ -4,6 +4,8 @@ import ProjectFacts from "@/components/project/ProjectFacts";
 import ProjectGallery from "@/components/project/ProjectGallery";
 import ProjectHero from "@/components/project/ProjectHero";
 import ProjectNavigation from "@/components/project/ProjectNavigation";
+import RelatedJournal from "./journal/RelatedJournal";
+import { journalForProject } from "@/content/journal";
 
 export default function ProjectPage(project: Project) {
   const facts: Array<[string, string]> = [
@@ -47,6 +49,7 @@ export default function ProjectPage(project: Project) {
     {project.drawing && <DrawingGallery title={project.title} drawing={project.drawing} download={project.download} />}
     <ProjectGallery title={project.title} images={project.images} />
     <ProjectFacts facts={facts} />
+    <RelatedJournal entries={journalForProject(project.slug)} />
     <ProjectNavigation previous={project.previous} next={project.next} />
   </main>;
 }
